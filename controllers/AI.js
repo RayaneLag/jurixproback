@@ -7,7 +7,7 @@ export const getAIResponse = async (input) => {
     const response = await axios.post(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDjdyO7Y6QUwWox5kJ3G_RuEFaYNWcGy2Y`,
       {
-        contents: input,
+        contents: { role: "user", parts: [{ text: input }] },
       },
       {
         headers: {
