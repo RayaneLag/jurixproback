@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   const userInput = req.body.input;
-  console.log(req.body.input, "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+
   try {
     const aiResponse = await getAIResponse(userInput);
     console.log(aiResponse, "aiResponse");

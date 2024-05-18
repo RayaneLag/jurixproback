@@ -4,8 +4,6 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import Routeruser from "./routes/User.js";
-import { getAIResponse } from "./controllers/AI.js";
-import axios from "axios";
 import routerAi from "./routes/AI.js";
 
 dotenv.config();
