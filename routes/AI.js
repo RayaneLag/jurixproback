@@ -13,7 +13,10 @@ router.post("/", async (req, res) => {
     console.log(error, "error");
     res
       .status(500)
-      .json({ error: "Erreur lors de la communication avec l'API Gemini." });
+      .json({
+        error: "Erreur lors de la communication avec l'API Gemini.",
+        errorMessage: error,
+      });
   }
 });
 

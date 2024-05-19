@@ -26,7 +26,7 @@ mongoose
 app.use("/settings", settingsRoutes);
 app.use("/user", Routeruser);
 app.use("/ai", routerAi);
-app.use("/api/clients", clientsRoute);
+app.use("/clients", clientsRoute);
 
 app.get("/", (req, res) => {
   res.send("hello world");
