@@ -5,6 +5,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import Routeruser from "./routes/User.js";
 import routerAi from "./routes/AI.js";
+import settingsRoutes from "./routes/Settings.js";
 
 dotenv.config();
 const app = express();
@@ -21,6 +22,7 @@ mongoose
   })
   .catch((err) => console.log(err));
 
+app.use("/settings", settingsRoutes);
 app.use("/user", Routeruser);
 app.use("/ai", routerAi);
 
