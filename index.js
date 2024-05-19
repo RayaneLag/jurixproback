@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import Routeruser from "./routes/User.js";
 import routerAi from "./routes/AI.js";
-import settingsRoutes from "./routes/Settings.js";
+import settingsRoutes from "./routes/settings.js";
 
 dotenv.config();
 const app = express();
